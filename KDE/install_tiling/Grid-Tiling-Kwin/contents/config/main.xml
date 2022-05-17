@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0 http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+  <kcfgfile name=""/>
+  <group name="">
+    <entry name="tile" type="bool">
+      <label>default state of tiling</label>
+      <default>true</default>
+    </entry>
+    <entry name="gapShow" type="bool">
+      <label>default state of show gaps between clients</label>
+      <default>true</default>
+    </entry>
+    <entry name="border" type="bool">
+      <label>default state of borders</label>
+      <default>false</default>
+    </entry>
+    <entry name="borderActive" type="bool">
+      <label>keep border around the active client</label>
+      <default>false</default>
+    </entry>
+    <entry name="gapValue" type="int">
+      <label>gap size between clients in px</label>
+      <default>16</default>
+    </entry>
+    <entry name="dividerBound" type="double">
+      <label>divider from this value to 1-value</label>
+      <default>0.4</default>
+    </entry>
+    <entry name="dividerStep" type="double">
+      <label>increment and decrement size of the divider</label>
+      <default>0.05</default>
+    </entry>
+    <entry name="delay" type="int">
+      <label>delay before adding new clients</label>
+      <default>10</default>
+    </entry>
+    <entry name="marginT" type="int">
+      <label>amount of space at the top in px</label>
+      <default>0</default>
+    </entry>
+    <entry name="marginB" type="int">
+      <label>amount of space at the bottom in px</label>
+      <default>0</default>
+    </entry>
+    <entry name="marginL" type="int">
+      <label>amount of space at the left in px</label>
+      <default>0</default>
+    </entry>
+    <entry name="marginR" type="int">
+      <label>amount of space at the right in px</label>
+      <default>0</default>
+    </entry>
+    <entry name="ignoredName" type="string">
+      <label>ignored client name regex</label>
+      <default>kwin_wayland|ksmserver|krunner|latte-dock|[Pp]lasma|plugin-container|wine|yakuake</default>
+    </entry>
+    <entry name="ignoredCaption" type="string">
+      <label>ignored client caption regex</label>
+      <default/>
+    </entry>
+
+    <entry name="rowsScreen0" type="string">
+      <default>2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2</default>
+    </entry>
+    <entry name="columnsScreen0" type="string">
+      <default>2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2</default>
+    </entry>
+    <entry name="rowsScreen1" type="string">
+      <default>2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2</default>
+    </entry>
+    <entry name="columnsScreen1" type="string">
+      <default>2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2</default>
+    </entry>
+    <entry name="rowsScreen2" type="string">
+      <default>2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2</default>
+    </entry>
+    <entry name="columnsScreen2" type="string">
+      <default>2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2</default>
+    </entry>
+    <entry name="rowsScreen3" type="string">
+      <default>2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2</default>
+    </entry>
+    <entry name="columnsScreen3" type="string">
+      <default>2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2</default>
+    </entry>
+    <entry name="rowsScreen4" type="string">
+      <default>2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2</default>
+    </entry>
+    <entry name="columnsScreen4" type="string">
+      <default>2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2</default>
+    </entry>
+    <entry name="rowsScreen5" type="string">
+      <default>2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2</default>
+    </entry>
+    <entry name="columnsScreen5" type="string">
+      <default>2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2</default>
+    </entry>
+    <entry name="rowsScreen6" type="string">
+      <default>2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2</default>
+    </entry>
+    <entry name="columnsScreen6" type="string">
+      <default>2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2</default>
+    </entry>
+    <entry name="rowsScreen7" type="string">
+      <default>2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2</default>
+    </entry>
+    <entry name="columnsScreen7" type="string">
+      <default>2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2</default>
+    </entry>
+    <entry name="rowsScreen8" type="string">
+      <default>2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2</default>
+    </entry>
+    <entry name="columnsScreen8" type="string">
+      <default>2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2</default>
+    </entry>
+    <entry name="rowsScreen9" type="string">
+      <default>2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2</default>
+    </entry>
+    <entry name="columnsScreen9" type="string">
+      <default>2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2</default>
+    </entry>
+
+    <entry name="minSpace1" type="int">
+      <default>1</default>
+    </entry>
+    <entry name="minSpaceName1" type="string">
+      <default>inkscape|krita|gimp|designer|creator|kdenlive</default>
+    </entry>
+    <entry name="minSpace2" type="int">
+      <default>2</default>
+    </entry>
+    <entry name="minSpaceName2" type="string">
+      <default>code|kdevelop|chromium|kate|spotify</default>
+    </entry>
+    <entry name="minSpace3" type="int">
+      <default>3</default>
+    </entry>
+    <entry name="minSpaceName3" type="string">
+      <default></default>
+    </entry>
+    <entry name="minSpace4" type="int">
+      <default>4</default>
+    </entry>
+    <entry name="minSpaceName4" type="string">
+      <default></default>
+    </entry>
+    <entry name="minSpace5" type="int">
+      <default>5</default>
+    </entry>
+    <entry name="minSpaceName5" type="string">
+      <default></default>
+    </entry>
+    <entry name="minSpace6" type="int">
+      <default>6</default>
+    </entry>
+    <entry name="minSpaceName6" type="string">
+      <default></default>
+    </entry>
+    <entry name="minSpace7" type="int">
+      <default>7</default>
+    </entry>
+    <entry name="minSpaceName7" type="string">
+      <default></default>
+    </entry>
+    <entry name="minSpace8" type="int">
+      <default>8</default>
+    </entry>
+    <entry name="minSpaceName8" type="string">
+      <default></default>
+    </entry>
+    <entry name="minSpace9" type="int">
+      <default>9</default>
+    </entry>
+    <entry name="minSpaceName9" type="string">
+      <default></default>
+    </entry>
+    <entry name="minSpace10" type="int">
+      <default>10</default>
+    </entry>
+    <entry name="minSpaceName10" type="string">
+      <default></default>
+    </entry>
+  </group>
+</kcfg>

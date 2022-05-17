@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>KWin::GridTilingConfigForm</class>
+  <widget class="QWidget" name="KWin::GridTilingConfigForm">
+    <property name="minimumSize">
+      <size>
+        <width>480</width>
+        <height>320</height>
+      </size>
+    </property>
+    <property name="windowTitle">
+      <string>Grid Tiling</string>
+    </property>
+    <widget class="QTabWidget" name="main">
+      <property name="geometry">
+        <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>480</width>
+          <height>320</height>
+        </rect>
+      </property>
+      <widget class="QWidget" name="tabMain">
+        <attribute name="title">
+          <string>Main</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="layoutMain">
+          <item>
+            <layout class="QHBoxLayout" name="layoutMainGroup0">
+              <property name="spacing">
+                <number>6</number>
+              </property>
+              <item>
+                <widget class="QCheckBox" name="kcfg_tile">
+                  <property name="text">
+                    <string>Tile</string>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QCheckBox" name="kcfg_gapShow">
+                  <property name="text">
+                    <string>Gap</string>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QCheckBox" name="kcfg_border">
+                  <property name="text">
+                    <string>Border</string>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QCheckBox" name="kcfg_borderActive">
+                  <property name="text">
+                    <string>Active Border</string>
+                  </property>
+                </widget>
+              </item>
+            </layout>
+          </item>
+          <item>
+            <widget class="Line" name="lineMain0">
+              <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+              </property>
+            </widget>
+          </item>
+          <item>
+            <layout class="QHBoxLayout" name="layoutMainGroup1">
+              <item>
+                <widget class="QLabel" name="labelGap">
+                  <property name="text">
+                    <string>Gap</string>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QSpinBox" name="kcfg_gapValue"/>
+              </item>
+              <item>
+                <widget class="QLabel" name="labelDividerBound">
+                  <property name="text">
+                    <string>Bound</string>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QDoubleSpinBox" name="kcfg_dividerBound">
+                  <property name="maximum">
+                    <double>0.500000000000000</double>
+                  </property>
+                  <property name="singleStep">
+                    <double>0.050000000000000</double>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QLabel" name="labelDividerStepSize">
+                  <property name="text">
+                    <string>Step Size</string>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QDoubleSpinBox" name="kcfg_dividerStep">
+                  <property name="maximum">
+                    <double>0.500000000000000</double>
+                  </property>
+                  <property name="singleStep">
+                    <double>0.010000000000000</double>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QLabel" name="labelDelay">
+                  <property name="text">
+                    <string>Delay</string>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QSpinBox" name="kcfg_delay">
+                  <property name="maximum">
+                    <number>9999</number>
+                  </property>
+                </widget>
+              </item>
+            </layout>
+          </item>
+          <item>
+            <widget class="Line" name="lineMain1">
+              <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+              </property>
+            </widget>
+          </item>
+          <item>
+            <layout class="QHBoxLayout" name="layoutMainGroup2">
+              <item>
+                <spacer name="marginHeaderSpacerLeft">
+                  <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                  </property>
+                </spacer>
+              </item>
+              <item>
+                <widget class="QLabel" name="marginHeaderTitle">
+                  <property name="layoutDirection">
+                    <enum>Qt::LeftToRight</enum>
+                  </property>
+                  <property name="text">
+                    <string>Margin</string>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <spacer name="marginHeaderSpacerRight">
+                  <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                  </property>
+                </spacer>
+              </item>
+            </layout>
+          </item>
+          <item>
+            <layout class="QHBoxLayout" name="layoutMainGroup3">
+              <item>
+                <widget class="QLabel" name="labelMarginLeft">
+                  <property name="text">
+                    <string>Left</string>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QSpinBox" name="kcfg_marginL"/>
+              </item>
+              <item>
+                <widget class="QLabel" name="labelMarginBottom">
+                  <property name="text">
+                    <string>Bottom</string>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QSpinBox" name="kcfg_marginB"/>
+              </item>
+              <item>
+                <widget class="QLabel" name="labelMarginTop">
+                  <property name="text">
+                    <string>Top</string>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QSpinBox" name="kcfg_marginT"/>
+              </item>
+              <item>
+                <widget class="QLabel" name="labelMarginRight">
+                  <property name="text">
+                    <string>Right</string>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QSpinBox" name="kcfg_marginR"/>
+              </item>
+            </layout>
+          </item>
+          <item>
+            <widget class="Line" name="lineMain2">
+              <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+              </property>
+            </widget>
+          </item>
+          <item>
+            <layout class="QHBoxLayout" name="layoutMainGroup4">
+              <item>
+                <spacer name="ignoredHeaderSpacerleft">
+                  <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                  </property>
+                </spacer>
+              </item>
+              <item>
+                <widget class="QLabel" name="ignoredHeaderTitle">
+                  <property name="layoutDirection">
+                    <enum>Qt::LeftToRight</enum>
+                  </property>
+                  <property name="text">
+                    <string>Ignored</string>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <spacer name="ignoredHeaderSpacerRight">
+                  <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                  </property>
+                </spacer>
+              </item>
+            </layout>
+          </item>
+          <item>
+            <layout class="QHBoxLayout" name="layoutIgnoredName">
+              <item>
+                <widget class="QLabel" name="labelIgnoredName">
+                  <property name="text">
+                    <string>Name</string>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QLineEdit" name="kcfg_ignoredName">
+                  <property name="text">
+                    <string/>
+                  </property>
+                </widget>
+              </item>
+            </layout>
+          </item>
+          <item>
+            <layout class="QHBoxLayout" name="layoutIgnoredCaption">
+              <item>
+                <widget class="QLabel" name="labelIgnoredCaption">
+                  <property name="text">
+                    <string>Caption</string>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QLineEdit" name="kcfg_ignoredCaption">
+                  <property name="text">
+                    <string/>
+                  </property>
+                </widget>
+              </item>
+            </layout>
+          </item>
+          <item>
+            <spacer name="spacerMain">
+              <property name="orientation">
+                <enum>Qt::Vertical</enum>
+              </property>
+            </spacer>
+          </item>
+        </layout>
+      </widget>
+      <widget class="QWidget" name="tabGrid">
+        <attribute name="title">
+          <string>Grid</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="layoutGrid">
+          <item>
+            <widget class="QScrollArea" name="scrollGrid">
+              <property name="frameShadow">
+                <enum>QFrame::Plain</enum>
+              </property>
+              <property name="widgetResizable">
+                <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaGrid">
+                <layout class="QGridLayout" name="gridGrid">
+                  <item row="0" column="0">
+                    <widget class="QLabel" name="labelRows">
+                      <property name="text">
+                        <string>Rows</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="0" column="1">
+                    <widget class="QLabel" name="labelColumns">
+                      <property name="text">
+                        <string>Columns</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="1" column="0">
+                    <widget class="QLineEdit" name="kcfg_rowsScreen0">
+                      <property name="toolTip">
+                        <string>Amount of rows per virtual desktop on screen 0</string>
+                      </property>
+                      <property name="toolTipDuration">
+                        <number>5000</number>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="2" column="0">
+                    <widget class="QLineEdit" name="kcfg_rowsScreen1">
+                      <property name="toolTip">
+                        <string>Amount of rows per virtual desktop on screen 1</string>
+                      </property>
+                      <property name="toolTipDuration">
+                        <number>5000</number>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="3" column="0">
+                    <widget class="QLineEdit" name="kcfg_rowsScreen2">
+                      <property name="toolTip">
+                        <string>Amount of rows per virtual desktop on screen 2</string>
+                      </property>
+                      <property name="toolTipDuration">
+                        <number>5000</number>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="4" column="0">
+                    <widget class="QLineEdit" name="kcfg_rowsScreen3">
+                      <property name="toolTip">
+                        <string>Amount of rows per virtual desktop on screen 3</string>
+                      </property>
+                      <property name="toolTipDuration">
+                        <number>5000</number>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="5" column="0">
+                    <widget class="QLineEdit" name="kcfg_rowsScreen4">
+                      <property name="toolTip">
+                        <string>Amount of rows per virtual desktop on screen 4</string>
+                      </property>
+                      <property name="toolTipDuration">
+                        <number>5000</number>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="6" column="0">
+                    <widget class="QLineEdit" name="kcfg_rowsScreen5">
+                      <property name="toolTip">
+                        <string>Amount of rows per virtual desktop on screen 5</string>
+                      </property>
+                      <property name="toolTipDuration">
+                        <number>5000</number>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="7" column="0">
+                    <widget class="QLineEdit" name="kcfg_rowsScreen6">
+                      <property name="toolTip">
+                        <string>Amount of rows per virtual desktop on screen 6</string>
+                      </property>
+                      <property name="toolTipDuration">
+                        <number>5000</number>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="8" column="0">
+                    <widget class="QLineEdit" name="kcfg_rowsScreen7">
+                      <property name="toolTip">
+                        <string>Amount of rows per virtual desktop on screen 7</string>
+                      </property>
+                      <property name="toolTipDuration">
+                        <number>5000</number>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="9" column="0">
+                    <widget class="QLineEdit" name="kcfg_rowsScreen8">
+                      <property name="toolTip">
+                        <string>Amount of rows per virtual desktop on screen 8</string>
+                      </property>
+                      <property name="toolTipDuration">
+                        <number>5000</number>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="10" column="0">
+                    <widget class="QLineEdit" name="kcfg_rowsScreen9">
+                      <property name="toolTip">
+                        <string>Amount of rows per virtual desktop on screen 9</string>
+                      </property>
+                      <property name="toolTipDuration">
+                        <number>5000</number>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="1" column="1">
+                    <widget class="QLineEdit" name="kcfg_columnsScreen0">
+                      <property name="toolTip">
+                        <string>Amount of columns per virtual desktop on screen 0</string>
+                      </property>
+                      <property name="toolTipDuration">
+                        <number>5000</number>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="2" column="1">
+                    <widget class="QLineEdit" name="kcfg_columnsScreen1">
+                      <property name="toolTip">
+                        <string>Amount of columns per virtual desktop on screen 1</string>
+                      </property>
+                      <property name="toolTipDuration">
+                        <number>5000</number>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="3" column="1">
+                    <widget class="QLineEdit" name="kcfg_columnsScreen2">
+                      <property name="toolTip">
+                        <string>Amount of columns per virtual desktop on screen 2</string>
+                      </property>
+                      <property name="toolTipDuration">
+                        <number>5000</number>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="4" column="1">
+                    <widget class="QLineEdit" name="kcfg_columnsScreen3">
+                      <property name="toolTip">
+                        <string>Amount of columns per virtual desktop on screen 3</string>
+                      </property>
+                      <property name="toolTipDuration">
+                        <number>5000</number>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="5" column="1">
+                    <widget class="QLineEdit" name="kcfg_columnsScreen4">
+                      <property name="toolTip">
+                        <string>Amount of columns per virtual desktop on screen 4</string>
+                      </property>
+                      <property name="toolTipDuration">
+                        <number>5000</number>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="6" column="1">
+                    <widget class="QLineEdit" name="kcfg_columnsScreen5">
+                      <property name="toolTip">
+                        <string>Amount of columns per virtual desktop on screen 5</string>
+                      </property>
+                      <property name="toolTipDuration">
+                        <number>5000</number>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="7" column="1">
+                    <widget class="QLineEdit" name="kcfg_columnsScreen6">
+                      <property name="toolTip">
+                        <string>Amount of columns per virtual desktop on screen 6</string>
+                      </property>
+                      <property name="toolTipDuration">
+                        <number>5000</number>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="8" column="1">
+                    <widget class="QLineEdit" name="kcfg_columnsScreen7">
+                      <property name="toolTip">
+                        <string>Amount of columns per virtual desktop on screen 7</string>
+                      </property>
+                      <property name="toolTipDuration">
+                        <number>5000</number>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="9" column="1">
+                    <widget class="QLineEdit" name="kcfg_columnsScreen8">
+                      <property name="toolTip">
+                        <string>Amount of columns per virtual desktop on screen 8</string>
+                      </property>
+                      <property name="toolTipDuration">
+                        <number>5000</number>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="10" column="1">
+                    <widget class="QLineEdit" name="kcfg_columnsScreen9">
+                      <property name="toolTip">
+                        <string>Amount of columns per virtual desktop on screen 9</string>
+                      </property>
+                      <property name="toolTipDuration">
+                        <number>5000</number>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </widget>
+          </item>
+        </layout>
+      </widget>
+      <widget class="QWidget" name="tabMinSpace">
+        <attribute name="title">
+          <string>Min Space</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="layoutMinSpace">
+          <item>
+            <widget class="QScrollArea" name="scrollMinSpace">
+              <property name="frameShadow">
+                <enum>QFrame::Plain</enum>
+              </property>
+              <property name="widgetResizable">
+                <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaMinSpace">
+                <layout class="QFormLayout" name="formMinSpace">
+                  <item row="0" column="0">
+                    <widget class="QLabel" name="labelMinSpace">
+                      <property name="text">
+                        <string>Value</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="0" column="1">
+                    <widget class="QLabel" name="labelMinSpaceName">
+                      <property name="text">
+                        <string>Name</string>
+                      </property>
+                    </widget>
+                  </item>
+                  <item row="1" column="0">
+                    <widget class="QSpinBox" name="kcfg_minSpace1"/>
+                  </item>
+                  <item row="1" column="1">
+                    <widget class="QLineEdit" name="kcfg_minSpaceName1"/>
+                  </item>
+                  <item row="2" column="0">
+                    <widget class="QSpinBox" name="kcfg_minSpace2"/>
+                  </item>
+                  <item row="2" column="1">
+                    <widget class="QLineEdit" name="kcfg_minSpaceName2"/>
+                  </item>
+                  <item row="3" column="0">
+                    <widget class="QSpinBox" name="kcfg_minSpace3"/>
+                  </item>
+                  <item row="3" column="1">
+                    <widget class="QLineEdit" name="kcfg_minSpaceName3"/>
+                  </item>
+                  <item row="4" column="0">
+                    <widget class="QSpinBox" name="kcfg_minSpace4"/>
+                  </item>
+                  <item row="4" column="1">
+                    <widget class="QLineEdit" name="kcfg_minSpaceName4"/>
+                  </item>
+                  <item row="5" column="0">
+                    <widget class="QSpinBox" name="kcfg_minSpace5"/>
+                  </item>
+                  <item row="5" column="1">
+                    <widget class="QLineEdit" name="kcfg_minSpaceName5"/>
+                  </item>
+                  <item row="6" column="0">
+                    <widget class="QSpinBox" name="kcfg_minSpace6"/>
+                  </item>
+                  <item row="6" column="1">
+                    <widget class="QLineEdit" name="kcfg_minSpaceName6"/>
+                  </item>
+                  <item row="7" column="0">
+                    <widget class="QSpinBox" name="kcfg_minSpace7"/>
+                  </item>
+                  <item row="7" column="1">
+                    <widget class="QLineEdit" name="kcfg_minSpaceName7"/>
+                  </item>
+                  <item row="8" column="0">
+                    <widget class="QSpinBox" name="kcfg_minSpace8"/>
+                  </item>
+                  <item row="8" column="1">
+                    <widget class="QLineEdit" name="kcfg_minSpaceName8"/>
+                  </item>
+                  <item row="9" column="0">
+                    <widget class="QSpinBox" name="kcfg_minSpace9"/>
+                  </item>
+                  <item row="9" column="1">
+                    <widget class="QLineEdit" name="kcfg_minSpaceName9"/>
+                  </item>
+                  <item row="10" column="0">
+                    <widget class="QSpinBox" name="kcfg_minSpace10"/>
+                  </item>
+                  <item row="10" column="1">
+                    <widget class="QLineEdit" name="kcfg_minSpaceName10"/>
+                  </item>
+                </layout>
+              </widget>
+            </widget>
+          </item>
+        </layout>
+      </widget>
+    </widget>
+  </widget>
+  <resources/>
+  <connections/>
+</ui>
