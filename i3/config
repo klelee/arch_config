@@ -14,12 +14,12 @@ font pango:monospace 10
 
 # 状态栏配置
 bar {
-	status_command i3blocks -c ~/.config/i3/i3blocks.conf
+        status_command i3blocks -c ~/.config/i3/i3blocks.conf
 
-	position top
-	workspace_buttons yes
-	tray_padding 0
-	separator_symbol "|"
+        position top
+        workspace_buttons yes
+        tray_padding 0
+        separator_symbol "|"
 }
 
 # 窗口间隙
@@ -192,4 +192,5 @@ bindsym $mod1+d exec --no-startup-id dmenu_run
 bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym $mod+F2 exec --no-startup-id google-chrome-stable
 bindsym $mod+F3 exec --no-startup-id thunar
+
 

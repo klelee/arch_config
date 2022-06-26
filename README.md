@@ -65,9 +65,9 @@ cd oh-my-bash/tools
 
 - 微信：`yay -S deepin-wine-wechat`
 
-  微信可能会出现字体呈现方框的问题，只需要将`fake_simsun.ttc`字体放在`/.deepinwine/Deepin-WeChat/drive_c/windows/Fonts`目录下。这个字体我会放在[arch_install](https://gitee.com/klelee/arch_install)仓库里
+  微信可能会出现字体呈现方框的问题，只需要将windows的fonts文件夹放在`/.deepinwine/Deepin-WeChat/drive_c/windows/Fonts`目录下。由于字体文件较大，我就不上传github了，如果有人实在是没有windows电脑，可以加QQ群，我发你！
 
-- QQ：`yay -S com.qq.im.deepin`
+- QQ：`yay -S com.qq.im.deepin` (此方案已失效)
 
 持续更新~
 
